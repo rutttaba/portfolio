@@ -1,0 +1,220 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact {
+    background: #363739;
+    line-height: 2em;
+    font-size: 1em;
+    margin-bottom: 3em;
+    border-bottom-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+}
+
+.contLinks {
+    color: #ffffff;
+    margin-left: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.intro {
+    font-family: 'Chilanka', cursive;
+    font-size: 1.5em;
+}
+
+.me {
+    width: 45%;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.infoLinks {
+    display: none;
+}
+
+h2 {
+    margin: 20px auto;
+    font-size: 1.5em;
+}
+
+p {
+    text-align: left;
+}
+
+.large {
+    display: none;
+}
+
+.bioText {
+    margin: 20px 8%;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.bio {
+    margin-bottom: 4em;
+}
+
+.emf {
+    font-weight: 700;
+}
+
+.small {
+    font-size: 0.9em;
+    text-decoration: 
+}
+
+.screen {
+    width: 80%;
+    border-radius: 0.3em;
+}
+
+
+.projectText {
+    margin: 20px 8%;
+    font-size: 0.9em;
+    line-height: 1.1em;
+}
+
+.projectLink {
+    padding: 0 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #363739;
+}
+
+.vr {
+    display: inline;
+    height: 90%;
+    width: 0;
+    border: 1px solid #363739;
+}
+
+
+footer {
+    margin-top: 5em;
+    background: #363739;
+    line-height: 2em;
+    font-size: 0.9em;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+    color: #ffffff;
+}
+ footer a {
+     color: #ffffff;
+     text-decoration: none;
+ }
+
+@media screen and (min-width: 400px) {
+    .contact {
+        font-size: 1.2em;
+    }
+
+    .intro {
+        font-size: 2em;
+    }
+
+    .me {
+        width: 35%;
+        margin: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 30px auto;
+    }
+
+    .bioText{
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .screen {
+        width: 75%;
+    }
+
+      .projectText{
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+
+    footer {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+  
+
+  nav, .projects, .intro, .about {
+    display: none;
+  }
+
+  .infoLinks {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin-top: 20px;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    width: 25vw;
+  }
+
+
+  .bio {
+    width: 75vw;
+    padding-top: 20vh;
+    
+  }
+
+  footer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+  }
+
+  .me {
+      width: 50%;
+  }
+
+  .infoLink {
+      text-decoration: none;
+      margin: 7px;
+      color: black;
+  }
+
+  .large {
+      display: block;
+      margin-bottom: 3em;
+  }
+
+}
