@@ -90,6 +90,10 @@ p {
     border-radius: 0.3em;
 }
 
+.projectTitle {
+    font-size: 0.7em;
+    margin-bottom: 0.5em;
+}
 
 .projectText {
     margin: 20px 8%;
@@ -109,6 +113,10 @@ p {
     height: 90%;
     width: 0;
     border: 1px solid #363739;
+}
+
+.largeCont {
+    display: none;
 }
 
 
@@ -154,7 +162,11 @@ footer {
         width: 75%;
     }
 
-      .projectText{
+    .projectTitle {
+        font-size: 1em;
+    }
+
+    .projectText{
         font-size: 1.1em;
         line-height: 1.2em;
     }
@@ -188,6 +200,10 @@ footer {
     width: 25vw;
   }
 
+  .screen {
+      width: 50%;
+  }
+
 
   .bio {
     width: 75vw;
@@ -204,6 +220,7 @@ footer {
 
   .me {
       width: 50%;
+      margin-top: 20vh;
   }
 
   .infoLink {
@@ -215,6 +232,18 @@ footer {
   .large {
       display: block;
       margin-bottom: 3em;
+  }
+
+  .largeCont {
+      padding-top: 30vh;
+      padding-right: 40px;
+  }
+
+  #mail, #gh, #linkedin {
+      font-size: 2em;
+      margin: 10px;
+      text-decoration: none;
+      color:  #363739;
   }
 
 }

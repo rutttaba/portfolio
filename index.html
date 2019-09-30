@@ -8,13 +8,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Chilanka|Karla:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39049d07a4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav role="navigation" class="contact">
         <a class="contLinks" id="mail" href="mailto:rutttaba@gmail.com">Mail</a>
-        <a class="contLinks" id="gh" href="https://github.com/rutttaba">Github</i></a>
-        <a class="contLinks" id="linkedin" href="https://www.linkedin.com/in/rutt-taba-37505b142">LinkedIn</i></a>
+        <a class="contLinks" id="gh" href="https://github.com/rutttaba">Github</a>
+        <a class="contLinks" id="linkedin" href="https://www.linkedin.com/in/rutt-taba-37505b142">LinkedIn</a>
     </nav>
     <main role='main' class='container'>
         <header role="banner">
@@ -22,13 +24,13 @@
             <h2 class="intro">I'm an aspiring Web Developer</h2>
             <img class="me" src="images/me.png" alt="photo of Rutt Taba, red hair, blue glasses">
             <section class="infoLinks">
-                <a class="infoLink" href="#">About Me</a>
-                <a class="infoLink" href="#">Projects</a>
-                <a class="infoLink" href="#">Contact</a>
+            <a class="infoLink js-about"  href="#">About Me</a>
+            <a class="infoLink js-work"  href="#">Projects</a>
+            <a class="infoLink js-contact"  href="#">Contact</a>    
             </section>
         </header>
-        
-        <section class='bio'>
+       
+        <section class='bio js-bio'>
             <h1 class="intro large">Hello, I'm Rutt Taba</h1>
             <h2 class="about">About me</h2>
             <p class="bioText">Scientist looking for a career change. Taking a bootcamp to become a <span class='emf'>web developer</span> and 
@@ -36,19 +38,33 @@
             on Codewars and learning new things.</p>
             <p class="bioText">Down to earth, can fix most anything and <span class='small'>milk a cow</span> if need be. Enjoy playing board games, reading good books and the great outdoors.</p>
         </section>
-        <section class='projects'>
+        <section class='projects js-projects'>
             <h2>Projects</h2>
-            <img class='screen' src="images/quiz_screesnhot.png" alt="screenshot of quiz about DNA">
-            <p class='projectText'>Find out how much you know about DNA and genes using this fun little quiz. Relates to my previous career in science
-            where I played around with DNA every day. Created with HTML5, CSS, Javascript and jQuery.
-            </p>
-            <a class='projectLink left' href="https://rutttaba.github.io">Demo</a>
-            <hr class='vr'>
-            <a class='projectLink' href="https://github.com/rutttaba/rutttaba.github.io">Github</a>
+            <section class="project">
+                <h3 class="projectTitle">Quiz about DNA</h3>
+                <img class='screen' src="images/quiz_screesnhot.png" alt="screenshot of quiz about DNA">
+                <p class='projectText'>Find out how much you know about DNA and genes using this fun little quiz. Relates to my previous
+                    career in science
+                    where I played around with DNA every day. Created with HTML5, CSS, Javascript and jQuery.
+                </p>
+                <a class='projectLink left' href="https://rutttaba.github.io">Demo</a>
+                <hr class='vr'>
+                <a class='projectLink' href="https://github.com/rutttaba/rutttaba.github.io">Github</a>
+            </section>
+        </section>
+        <section class="largeCont js-contacts">
+            <a class="contLinks-lg" id="mail" href="mailto:rutttaba@gmail.com">Mail</a>
+            <a class="contLinks-lg" id="gh" href="https://github.com/rutttaba">Github</a>
+            <a class="contLinks-lg" id="linkedin" href="https://www.linkedin.com/in/rutt-taba-37505b142">LinkedIn</a>
         </section>
     </main>
     <footer>
         Contact me: <a href="mailto:rutttaba@gmail.com">rutttaba@gmail.com</a>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
+
+
+
+
