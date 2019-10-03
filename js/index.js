@@ -17,7 +17,6 @@ function showProjects() {
 
 function showAbout() {
     $(".js-about").click(function () {
-        
         $(".js-projects").hide();
         $(".js-contacts").hide();
         $(".js-bio").show();

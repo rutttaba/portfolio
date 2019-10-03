@@ -172,7 +172,7 @@ footer {
     }
 
     footer {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
 }
@@ -216,6 +216,7 @@ footer {
       bottom: 0;
       right: 0;
       left: 0;
+      font-size: 1em;
   }
 
   .me {
@@ -231,7 +232,7 @@ footer {
 
   .large {
       display: block;
-      margin-bottom: 3em;
+      margin-bottom: 2em;
   }
 
   .largeCont {
@@ -239,7 +240,7 @@ footer {
       padding-right: 40px;
   }
 
-  #mail, #gh, #linkedin {
+  .contLinks-lg {
       font-size: 2em;
       margin: 10px;
       text-decoration: none;
