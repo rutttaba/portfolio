@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rutt Taba</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Chilanka|Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/39049d07a4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <nav class="contact">
-        <a class="contLinks" href="mailto:rutttaba@gmail.com">Mail</a>
-        <a class="contLinks" href="https://github.com/rutttaba" target="_blank">Github</a>
-        <a class="contLinks"  href="https://www.linkedin.com/in/rutt-taba-37505b142" target="_blank">LinkedIn</a>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+    
+            <ul id="menu">
+                <a href="mailto:rutttaba@gmail.com">
+                    <li>Mail</li>
+                </a>
+                <a href="https://github.com/rutttaba" target="_blank">
+                    <li>Github</li>
+                </a>
+                <a href="https://www.linkedin.com/in/rutt-taba-37505b142" target="_blank">
+                    <li>LinkedIn</li>
+                </a>
+            </ul>
+        </div>
     </nav>
+
     <main class='container'>
         <header>
             <h1 class="intro">Hello, I'm Rutt Taba</h1>
             <h2 class="intro">I'm an aspiring Web Developer</h2>
             <img class="me" src="images/me.png" alt="photo of Rutt Taba, red hair, blue glasses">
             <section class="infoLinks">
-            <a class="infoLink js-about"  href="#">About Me</a>
-            <a class="infoLink js-work"  href="#">Projects</a>
-            <a class="infoLink js-contact"  href="#">Contact</a>    
+                <a class="infoLink js-about" href="#">About Me</a>
+                <a class="infoLink js-work" href="#">Projects</a>
+                <a class="infoLink js-contact" href="#">Contact</a>
             </section>
         </header>
-       
+
         <section class='bio js-bio'>
             <h2 class="intro large">Hello, I'm Rutt Taba</h2>
             <h2 class="about">About me</h2>
-            <p class="bioText">Scientist looking for a career change. Taking a bootcamp to become a <span class='emf'>web developer</span> and 
-            thoroughly enjoying my journey so far. Passionate about <span class='emf'>Javascript and Ruby</span>. Love solving problems, playing around 
-            on Codewars and learning new things.</p>
-            <p class="bioText">Down to earth, can fix most anything and <span class='small'>milk a cow</span> if need be. Enjoy playing board games, reading good books and the great outdoors.</p>
+            <p class="bioText">Scientist looking for a career change. Taking a bootcamp to become a <span
+                    class='emf'>web developer</span> and
+                thoroughly enjoying my journey so far. Passionate about <span class='emf'>Javascript and Ruby</span>.
+                Love solving problems, playing around
+                on Codewars and learning new things.</p>
+            <p class="bioText">Down to earth, can fix most anything and <span class='small'>milk a cow</span> if need
+                be. Enjoy playing board games, reading good books and the great outdoors.</p>
         </section>
         <section class='projects js-projects'>
             <h2>Projects</h2>
-            <section class="project">
-                <h3 class="projectTitle">Quiz about DNA</h3>
-                <img class='screen' src="images/quiz_screesnhot.png" alt="screenshot of quiz about DNA">
-                <p class='projectText'>Find out how much you know about DNA and genes using this fun little quiz. Relates to my previous
-                    career in science
-                    where I played around with DNA every day. Created with <span class='emf'>HTML5</span>, <span class='emf'>CSS</span>, <span class='emf'>Javascript</span> and <span class='emf'>jQuery</span>.
-                </p>
-                <a class='projectLink left' href="https://rutttaba.github.io" target="_blank">Demo</a>
-                <hr class='vr'>
-                <a class='projectLink' href="https://github.com/rutttaba/rutttaba.github.io" target="_blank">Github</a>
+            <section class="project">  
             </section>
         </section>
         <section class="largeCont js-contacts">
             <h3 class="large intro">Contact Me</h3>
-            <a class="contLinks-lg" id="mail" href="mailto:rutttaba@gmail.com" >Mail</a>
+            <a class="contLinks-lg" id="mail" href="mailto:rutttaba@gmail.com">Mail</a>
             <a class="contLinks-lg" id="gh" href="https://github.com/rutttaba" target="_blank">Github</a>
-            <a class="contLinks-lg" id="linkedin" href="https://www.linkedin.com/in/rutt-taba-37505b142" target="_blank">LinkedIn</a>
+            <a class="contLinks-lg" id="linkedin" href="https://www.linkedin.com/in/rutt-taba-37505b142"
+                target="_blank">LinkedIn</a>
         </section>
     </main>
     <footer>
         Contact me: <a href="mailto:rutttaba@gmail.com">rutttaba@gmail.com</a>
     </footer>
+    
     <script src="js/index.js"></script>
 </body>
+
 </html>
-
-
-
-
