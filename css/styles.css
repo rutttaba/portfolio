@@ -1,18 +1,14 @@
-*{
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0;
-    font-family: 'Karla', sans-serif;
-}
-
 
 body
 {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Karla', sans-serif;  
   margin: 0;
   padding: 0;
   background: #232323;
   color: #cdcdcd;
-  
+  padding-bottom: 40px;
 }
 
 a
@@ -24,18 +20,17 @@ a
 
 a:hover
 {
-  color: tomato;
+  color: rgb(242, 104, 79);
+  font-weight: 700;
 }
 
 #menuToggle
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
-  
+  top: 30px;
+  left: 30px;
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -48,12 +43,9 @@ a:hover
   position: absolute;
   top: -7px;
   left: -5px;
-  
   cursor: pointer;
-  
-  opacity: 0; /
+  opacity: 0; 
   z-index: 2; 
-  
   -webkit-touch-callout: none;
 }
 
@@ -65,16 +57,11 @@ a:hover
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
   background: #cdcdcd;
   border-radius: 3px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
@@ -113,25 +100,22 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 250px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
+  padding: 40px;
+  padding-top: 100px;
+  border-radius: 4px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 22px;
 }
 
@@ -143,14 +127,21 @@ a:hover
 
 
 .container {
-    width: 80%;
+    position: relative;
+    padding-top: 40px;
+    width: 85%;
     text-align: center;
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
 h2 {
     font-family: 'Chilanka', cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
+     margin: 20px auto;
 }
 
 .me {
@@ -163,23 +154,15 @@ h2 {
     display: none;
 }
 
-h2 {
-    margin: 20px auto;
-    font-size: 1.5em;
-}
-
 p {
     text-align: left;
+    font-size: 12px;
+    line-height: 16px;;
+    margin: 20px 8%;
 }
 
 .large {
     display: none;
-}
-
-.bioText {
-    margin: 20px 8%;
-    font-size: 1em;
-    line-height: 1.2em;
 }
 
 .bio {
@@ -192,32 +175,40 @@ p {
 
 .small {
     font-size: 0.9em;
-    text-decoration: 
 }
 
+.projectContainer {
+    margin-bottom: 40px;
+  
+}
 
 .projectTitle {
-    font-size: 0.7em;
-    margin-bottom: 0.5em;
+    font-size: 1em;
+    margin-bottom: 1em;
+   
+}
+
+.screen {
+    width: 80%;
 }
 
 .projectText {
-    margin: 20px 8%;
-    font-size: 0.9em;
+    margin: 5px 8%;
+    padding-left: 5px;
+   
     line-height: 1.1em;
 }
 
 .projectLink {
     padding: 0 10px;
+    font-size: 12px;
     font-weight: 700;
     text-decoration: none;
-    color: #363739;
+    color: #ededed;
 }
 
 .vr {
-    display: inline;
-    height: 90%;
-    width: 0;
+    display: inline; 
     border: 1px solid #363739;
 }
 
@@ -231,6 +222,11 @@ footer {
     background: #363739;
     line-height: 2em;
     font-size: 0.9em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
     border-top-left-radius: 0.2em;
     border-top-right-radius: 0.2em;
     color: #ffffff;
@@ -241,9 +237,6 @@ footer {
  }
 
 @media screen and (min-width: 400px) {
-    .contact {
-        font-size: 1.2em;
-    }
 
     .intro {
         font-size: 2em;
@@ -259,23 +252,23 @@ footer {
         margin: 30px auto;
     }
 
-    .bioText{
-        font-size: 1.2em;
-        line-height: 1.5em;
+    p {
+        font-size: 1em;
+        line-height: 1.2em;
     }
 
     .screen {
-        width: 75%;
+        width: 80%;
     }
 
     .projectTitle {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
-    .projectText{
-        font-size: 1.1em;
-        line-height: 1.2em;
+    .projectLink {
+        font-size: 0.9em;
     }
+   
 
     footer {
         font-size: 1.5em;
@@ -290,42 +283,28 @@ footer {
     display: none;
   }
 
-  .infoLinks {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    margin-top: 20px;
-  }
-
   main {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   header {
-    width: 25vw;
-  }
-
-  .screen {
-      width: 50%;
-  }
-
-
-  .bio {
-    width: 75vw;
-    padding-top: 20vh;
-    
-  }
-
-  footer {
       position: fixed;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      font-size: 1em;
+      left: 5%;
+      top: 10%;
+
+  }
+   .infoLinks {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-top: 20px;
   }
 
-  .me {
+   .me {
       width: 50%;
       margin-top: 20vh;
   }
@@ -333,7 +312,24 @@ footer {
   .infoLink {
       text-decoration: none;
       margin: 7px;
-      color: black;
+      color: #ededed;
+  }
+
+  .bio, .projects, .largeCont {
+    position: relative;
+    width: 75%;
+    right: 10%;
+    left: 25%;
+    top: 10%;
+  }
+
+  .bio {
+    margin-top: 15%;
+  }
+
+
+  .screen {
+      width: 80%;
   }
 
   .large {
@@ -343,18 +339,30 @@ footer {
 
   .largeCont {
       padding-top: 30vh;
-      padding-right: 40px;
   }
 
   .contLinks-lg {
+      color: #ededed;
       font-size: 2em;
-      margin: 10px;
+      margin: 20px;
       text-decoration: none;
-      color:  #363739;
+    
   }
 
   .projectText {
-      line-height: 1.5em;
+      line-height: 1.2em;
+  }
+
+  .projectTitle {
+      font-size: 1.4em;
+  }
+
+  .projectContainer {
+      margin-bottom: 80px;
+  }
+
+    footer {
+      font-size: 1em;
   }
 
 }
