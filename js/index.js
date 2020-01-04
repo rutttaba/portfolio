@@ -56,11 +56,12 @@ function showAbout() {
     });
 }
 
+
 function makeItWork() {
     makeProjects();
     showAbout();
     showProjects();
-    showContacts();
+    showContacts(); 
 }
 
 $(makeItWork);
